@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upload Video</title></head>
+<body>
+    <h2><center>Upload Video untuk Deteksi Kendaraan</center></h2>
+    <h3>Cara menggunakan website deteksi objek:</h3>
+    <ul style="list-style-type:circle;">
+        <li>Klik tombol Choose File</li>
+        <li>Pilih video yang mau dideteksi dan pilih Open</li>
+        <li>Kemudian klik tombol Proses</li>
+        <li>Tunggu beberapa saat</li>
+        <li>Setelah video berhasil dideteksi halaman akan berpindah secara otomatis ke Hasil Deteksi</li>
+    </ul>
+    <p>Notes:<br>Sistem hanya akan menghitung kendaraan yang berjalan dari atas video ke bawah video. Untuk mendapatkan hasil yang maksimal, kualitas video yang digunakan, baik pada siang maupun malam hari, harus memenuhi standar tertentu. Pada kondisi siang hari, pencahayaan alami membantu sistem mengenali objek dengan lebih mudah, sehingga video dengan resolusi minimal 720p atau idealnya 1080p (Full HD) dan frame rate antara 15 hingga 30 fps untuk menangkap detail kendaraan dengan jelas. Sebaliknya, pada malam hari, video sebaiknya memiliki resolusi minimal 1080p, dengan tingkat kecerahan dan kontras yang cukup tinggi agar kendaraan dapat dibedakan dari latar belakang yang gelap. Frame rate minimal 15 fps untuk menghindari blur pada objek yang bergerak. Selain itu, video harus mampu menangani perbedaan cahaya ekstrem, seperti sorotan lampu kendaraan, tanpa menyebabkan overexposure. </p>
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <input type="submit" value="Proses">
+    </form>
+</body>
+</html>

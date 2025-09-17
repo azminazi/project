@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hasil Deteksi</title></head>
+<body>
+    <h2>Hasil Video Deteksi</h2>
+    <video width="640" height="480" controls>
+        <source src="{{ url_for('send_video', path='output.mp4') }}" type="video/mp4">
+        Browser tidak mendukung video.
+    </video>
+</body>
+</html>
